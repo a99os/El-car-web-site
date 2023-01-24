@@ -393,5 +393,88 @@ header {
 }
 .slide {
   margin-top: 40px;
+  margin-bottom: 56px;
 }
 /* --------------------- popular section finished --------------------- */
+/* --------------------- features section started --------------------- */
+.features__wrapper {
+  text-align: center;
+  position: relative;
+}
+.features__title {
+  margin-top: 72px;
+  height: 34px;
+
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  position: relative;
+  z-index: 1;
+
+  color: #f1f2f3;
+}
+.features__image {
+  position: relative;
+  z-index: 1;
+  margin-top: 64px;
+  width: 200px;
+  height: 462.53px;
+}
+.features__bgc {
+  position: absolute;
+  width: 650px;
+  height: 705.42px;
+  left: 98px;
+  top: -48px;
+}
+
+.features__items {
+  position: absolute;
+  padding: 12px;
+  width: 127px;
+  height: 92px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  text-align: center;
+}
+.item-1 {
+  z-index: 2;
+  left: 350px;
+  top: 161px;
+}
+.item-2 {
+  z-index: 2;
+  left: 580px;
+  top: 225px;
+}
+.item-3 {
+  z-index: 2;
+  left: 350px;
+  bottom: 111px;
+}
+
+.features__items-title {
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #ffffff;
+}
+.features__items:hover{
+  background-color:rgba(5, 33, 64, 0.1)
+}
+.features__items-text {
+  text-align: center;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+}
+/* --------------------- features section finished --------------------- */
