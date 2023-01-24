@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  list-style-type: none;
 }
 :root {
   --bg-main-color: #0a0a0b;
@@ -113,15 +114,39 @@ header {
 }
 .intro__car {
   margin-top: 48px;
+  width: 380px;
+  height: 222.22px;
 }
 
 .intro__info {
-  display: flex;
   width: 406px;
-  justify-content: space-around;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   margin: 40px auto;
   height: 104px;
+  text-align: center;
+}
+.text {
+  margin-top: 16px;
+  height: 34px;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: #ffffff;
+}
+.info__text {
+  margin-top: 4px;
+  width: 89px;
+  height: 18px;
+  font-family: "Exo regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 140%;
+  color: #888b91;
 }
 .intro__start {
   width: 90px;
@@ -152,3 +177,216 @@ header {
   filter: drop-shadow(0px 0px 16px #02db8a);
 }
 /* --------------------- into section finished ---------------------- */
+/* --------------------- about section started ----------------------- */
+.about {
+  padding: 72px 0 88px;
+}
+.about__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about__left {
+  position: relative;
+}
+.about__container--img {
+  width: 480px;
+  height: 320.14px;
+  background: url(about.png);
+  border-radius: 8px;
+}
+.about__container--comment {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 197px;
+  height: 104px;
+  right: 0;
+  top: 268px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+}
+.about__container--comment h2 {
+  width: 67px;
+  height: 28px;
+
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+
+  color: #ffffff;
+}
+.about__container--comment h3 {
+  width: 157px;
+  height: 36px;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.about__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  width: 401px;
+  height: 278px;
+}
+
+.about__right h2 {
+  width: 209px;
+  height: 68px;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: #f1f2f3;
+}
+.about__right h3 {
+  width: 401px;
+  height: 88px;
+  left: 723px;
+  top: 139px;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+.about__right button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 14px 32px;
+  gap: 10px;
+  width: 149px;
+  height: 50px;
+  background: #4177dc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffffff;
+}
+/* --------------------- about section finished --------------------- */
+/* --------------------- popular section started --------------------- */
+
+.wrapper__popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popular__title {
+  width: 278px;
+  margin-top: 72px;
+  height: 68px;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #f1f2f3;
+}
+
+.popular__cards {
+  margin-top: 64px;
+  display: flex;
+  width: 870px;
+  justify-content: space-between;
+}
+.popular__card {
+  width: 258px;
+  position: relative;
+  height: 328px;
+  background: #111213;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 32px 24px 24px;
+}
+.popular__card:hover {
+  transform: scale(1.05);
+}
+.light {
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  left: -80px;
+  top: -48px;
+  background: rgba(55, 74, 109, 0.5);
+  filter: blur(60px);
+}
+.popular__card h4 {
+  z-index: 1;
+  position: relative;
+  width: 90px;
+  height: 34px;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: #f1f2f3;
+}
+.popular__card p {
+  z-index: 1;
+  position: relative;
+  width: auto;
+  height: 22px;
+  font-family: "Exo regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #babec4;
+}
+.popular__card--img {
+  margin-top: 12px;
+  position: relative;
+  z-index: 1;
+  transform: translateX(30px);
+}
+
+.popular__card--info {
+  width: 163px;
+  height: 44px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 140%;
+  flex-wrap: wrap;
+}
+.popular__card h3 {
+  margin-top: 31px;
+  width: 86px;
+  height: 28px;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+}
+.popular__card--link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.slide {
+  text-decoration: none;
+  margin-right: 8px;
+}
+/* --------------------- popular section finished --------------------- */
