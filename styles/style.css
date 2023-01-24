@@ -16,4 +16,139 @@ body {
   font-family: "Exo Regular";
   color: var(--text-main-color);
   background-color: var(--bg-main-color);
+  overflow-x: hidden;
 }
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* --------------------- header started ------------------------------ */
+header {
+  width: 100%;
+  height: auto;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  /* background-c olor: rgb(119, 115, 115); */
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+.nav__list--item {
+  list-style-type: none;
+}
+.nav__list--item-link {
+  text-decoration: none;
+  color: var(--text-main-color);
+}
+.nav__list--item-link:hover {
+  color: var(--icon-color);
+}
+.active {
+  color: var(--btn-bg-color-hover);
+  text-shadow: 0px 0px 32px #346dda;
+}
+/* --------------------- header ended ------------------------------ */
+/* --------------------- into section started ---------------------- */
+.into {
+  width: 100%;
+  height: auto;
+}
+.intro::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: -138px;
+  top: -28px;
+  background: rgba(55, 74, 109, 0.5);
+  filter: blur(90px);
+}
+
+.intro::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  right: -20px;
+  top: 404px;
+
+  background: rgba(55, 74, 109, 0.5);
+  filter: blur(90px);
+}
+.wrapper {
+  text-align: center;
+}
+.intro__title {
+  margin-top: 72px;
+  font-family: "Exo SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 140%;
+}
+.intro__subtitle {
+  margin-top: 20px;
+  font-family: "Exo SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+}
+.wrapper span {
+  font-family: "Exo SemiBold";
+  font-weight: 400px;
+  font-size: 16px;
+  display: block;
+  margin-top: 8px;
+  color: var(--icon-color);
+}
+.intro__car {
+  margin-top: 48px;
+}
+
+.intro__info {
+  display: flex;
+  width: 406px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px auto;
+  height: 104px;
+}
+.intro__start {
+  width: 90px;
+  height: 90px;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 91px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #02db8a;
+  filter: drop-shadow(0px 0px 16px #02db8a);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.intro__start h2 {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #099260;
+  font-size: 14px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2 ease;
+}
+.intro__start:hover h2 {
+  filter: drop-shadow(0px 0px 16px #02db8a);
+}
+/* --------------------- into section finished ---------------------- */
