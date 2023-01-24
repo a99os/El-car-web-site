@@ -480,7 +480,7 @@ header {
 /* --------------------- features section finished --------------------- */
 /* --------------------- luxury section started --------------------- */
 .luxury__wrapper {
-  /* align-items: center; */
+  align-items: center;
 }
 .luxury__title {
   margin-top: 72px;
@@ -563,3 +563,60 @@ header {
   filter: blur(60px);
 }
 /* --------------------- luxury section finished --------------------- */
+/* --------------------- Offer section started --------------------- */
+.offer__cntainer {
+  background-image: url("../images/subscribe-bg.png");
+}
+.offer_wrapper {
+  width: 900px;
+  margin: 140px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subsicribe {
+  padding: 50px;
+}
+.subsicribe h1 {
+  width: 312px;
+  height: 68px;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: #f1f2f3;
+}
+.subsicribe h2 {
+  margin-top: 32px;
+  width: 375px;
+  height: 66px;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #babec4;
+}
+.subsicribe a {
+  display: block;
+  margin-top: 48px;
+  text-decoration: none;
+  padding: 14px 32px;
+  gap: 10px;
+  width: 174px;
+  height: 50px;
+  background: #4177dc;
+  border-radius: 4px;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+}
+.offer_wrapper img {
+  width: 450px;
+  height: 201.99px;
+}
+/* --------------------- Offer section finished --------------------- */
