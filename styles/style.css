@@ -1,6 +1,6 @@
 * {
   padding: 0;
-  max-width: 0;
+  margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -15,4 +15,5 @@
 body {
   font-family: "Exo Regular";
   color: var(--text-main-color);
+  background-color: var(--bg-main-color);
 }
