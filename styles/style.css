@@ -311,9 +311,11 @@ header {
   border-radius: 20px;
   overflow: hidden;
   padding: 32px 24px 24px;
+  transition: all 0.7s;
 }
 .popular__card:hover {
   transform: scale(1.05);
+  background-image: url("../images/galaxy-background-design_2001751.jpg");
 }
 .light {
   position: absolute;
@@ -385,8 +387,11 @@ header {
   right: 0;
 }
 
-.slide {
+.slide__item {
   text-decoration: none;
   margin-right: 8px;
+}
+.slide {
+  margin-top: 40px;
 }
 /* --------------------- popular section finished --------------------- */
