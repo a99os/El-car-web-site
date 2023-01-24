@@ -373,8 +373,8 @@ header {
 }
 .popular__card h3 {
   margin-top: 31px;
-  width: 86px;
-  height: 28px;
+  width: 100px;
+  height: 40px;
   font-family: "Exo Regular";
   font-style: normal;
   font-weight: 600;
@@ -418,7 +418,7 @@ header {
 .features__image {
   position: relative;
   z-index: 1;
-  margin-top: 64px;
+  margin: 64px 0px;
   width: 200px;
   height: 462.53px;
 }
@@ -464,8 +464,8 @@ header {
   line-height: 140%;
   color: #ffffff;
 }
-.features__items:hover{
-  background-color:rgba(5, 33, 64, 0.1)
+.features__items:hover {
+  background-color: rgba(5, 33, 64, 0.1);
 }
 .features__items-text {
   text-align: center;
@@ -478,3 +478,88 @@ header {
   color: #ffffff;
 }
 /* --------------------- features section finished --------------------- */
+/* --------------------- luxury section started --------------------- */
+.luxury__wrapper {
+  /* align-items: center; */
+}
+.luxury__title {
+  margin-top: 72px;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  color: #f1f2f3;
+}
+
+.luxury__fillter {
+  margin: 0 auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+
+  width: 300px;
+  height: 61px;
+}
+.luxury__fillter--item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  left: 572px;
+  top: 82px;
+  background: #111213;
+  border-radius: 16px;
+}
+.active__fillter {
+  background: #4177dc;
+}
+.luxury__fillter--item-link {
+  text-decoration: none;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #f1f2f3;
+}
+.luxury__fillter--item:hover {
+  background: #000;
+}
+
+.tesla {
+  transform: translateY(6px);
+}
+.fillter__cards {
+  width: 886px;
+  height: 700px;
+  margin: 72px auto;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+.fillter__card {
+  width: 248px;
+  height: 312px;
+  margin: 0 70px 72px 0px;
+}
+.fillter__card:nth-child(3) {
+  margin-right: 0px;
+}
+.popular__card--img {
+  transform: none;
+  margin-top: 12px;
+}
+.luxury__light {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  left: 30px;
+  top: 60px;
+
+  background: rgba(55, 74, 109, 0.5);
+  filter: blur(60px);
+}
+/* --------------------- luxury section finished --------------------- */
