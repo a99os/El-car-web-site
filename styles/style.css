@@ -34,7 +34,6 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  /* background-c olor: rgb(119, 115, 115); */
 }
 .nav__list {
   display: flex;
@@ -180,6 +179,7 @@ header {
 /* --------------------- about section started ----------------------- */
 .about {
   padding: 72px 0 88px;
+  height: auto;
 }
 .about__container {
   display: flex;
@@ -191,7 +191,7 @@ header {
 }
 .about__container--img {
   width: 480px;
-  height: 320.14px;
+  min-height: 320.14px;
   background: url(about.png);
   border-radius: 8px;
 }
@@ -279,7 +279,8 @@ header {
 }
 /* --------------------- about section finished --------------------- */
 /* --------------------- popular section started --------------------- */
-
+.popular {
+}
 .wrapper__popular {
   display: flex;
   flex-direction: column;
@@ -393,10 +394,13 @@ header {
 }
 .slide {
   margin-top: 40px;
-  margin-bottom: 56px;
+  margin-bottom: 48px;
 }
 /* --------------------- popular section finished --------------------- */
 /* --------------------- features section started --------------------- */
+.features {
+  height: auto;
+}
 .features__wrapper {
   text-align: center;
   position: relative;
@@ -479,11 +483,13 @@ header {
 }
 /* --------------------- features section finished --------------------- */
 /* --------------------- luxury section started --------------------- */
+.luxury {
+  padding-top: 72px;
+}
 .luxury__wrapper {
   align-items: center;
 }
 .luxury__title {
-  margin-top: 72px;
   font-family: "Exo Regular";
   font-style: normal;
   font-weight: 600;
@@ -564,9 +570,16 @@ header {
 }
 /* --------------------- luxury section finished --------------------- */
 /* --------------------- Offer section started --------------------- */
-.offer__cntainer {
-  background-image: url("../images/subscribe-bg.png");
+.offer {
+  background: no-repeat url("../images/subscribe-bg.png") center,
+    linear-gradient(
+      180deg,
+      rgba(10, 10, 11, 0.2) 0%,
+      rgba(10, 10, 11, 0.5) 100%
+    );
+  background-size: cover;
 }
+
 .offer_wrapper {
   width: 900px;
   margin: 140px auto 0px;
@@ -621,31 +634,35 @@ header {
 }
 /* --------------------- Offer section finished --------------------- */
 /* --------------------- Logos section started --------------------- */
+.logos {
+  padding: 76px 0;
+}
 .logos__list {
   display: flex;
   width: 900px;
-  margin: 76px auto;
+  margin: 0px auto;
   justify-content: space-around;
   align-items: center;
 }
-
 .logos__list--item {
   width: 50px;
-  height: 50px;
+  height: 57px;
+  display: flex;
+  align-items: center;
 }
-.audi img {
-  transform: translateY(15px);
-}
+
 /* --------------------- Logos section finished --------------------- */
 /* --------------------- Footer section finished --------------------- */
-.ffoter{
+footer {
   height: auto;
+  overflow: hidden;
 }
 .footer-elements {
   display: flex;
   align-items: start;
   justify-content: space-between;
   margin: 60px 0px;
+  overflow: hidden;
 }
 
 .footer-info {
@@ -664,10 +681,12 @@ header {
 .footer-nav-list {
   list-style-type: none;
 }
+.footer-item {
+  margin: 12px 0px;
+}
 
 .footer-item-link {
   text-decoration: none;
-  margin: 40px 0px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -683,6 +702,7 @@ header {
 }
 
 .end {
+  margin-top: 98px;
   text-align: center;
   font-style: normal;
   font-weight: 400;
